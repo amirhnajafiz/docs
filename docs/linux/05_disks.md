@@ -1,5 +1,32 @@
 # Disks
 
+To see only physical disks (no partitions), run:
+
+```sh
+lsblk -d
+```
+
+If you want to see more details, run:
+
+```sh
+sudo lshw -class disk
+```
+
+Before using a disk, create a new file system.
+
+```
+sudo mkfs.ext4 /dev/sdX#
+```
+
+The mount it.
+
+```sh
+sudo mkdir -p /mnt/device
+sudo mount /dev/sdX# /mnt/device
+```
+
+## Capacity check
+
 A quick command to check free space on disks is:
 
 ```sh
