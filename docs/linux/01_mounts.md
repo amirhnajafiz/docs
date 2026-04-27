@@ -27,7 +27,7 @@ This command unmounts the filesystem from `/mnt/usb`.
 
 To make mounts persistent across reboots, add an entry to the `/etc/fstab` file:
 
-```
+```txt
 /dev/sdb1   /mnt/usb   ext4   defaults   0   2
 ```
 

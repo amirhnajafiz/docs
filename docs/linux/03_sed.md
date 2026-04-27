@@ -9,6 +9,7 @@ sed -i 's/old-string/new-string/g' yourfile.txt
 ```
 
 Explanation:
+
 - sed: The command for the stream editor.
 - -i: This option specifies that the changes should be made "in place," meaning the original file will be modified directly. Without this, sed would print the modified content to standard output.
 - 's/old-string/new-string/g': This is the substitution command.

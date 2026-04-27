@@ -33,7 +33,7 @@ sudo umount /mnt/nfs
 
 To mount an NFS share automatically at boot, add an entry to `/etc/fstab`:
 
-```
+```txt
 server:/remote/path   /mnt/nfs   nfs   defaults   0   0
 ```
 
@@ -55,7 +55,7 @@ df -hT | grep nfs
 
 On the NFS server, edit `/etc/exports` to specify which directories to share:
 
-```
+```txt
 /srv/nfs    192.168.1.0/24(rw,sync,no_subtree_check)
 ```
 

@@ -14,7 +14,7 @@ sudo lshw -class disk
 
 Before using a disk, create a new file system.
 
-```
+```sh
 sudo mkfs.ext4 /dev/sdX#
 ```
 
@@ -61,8 +61,9 @@ One good command to check hidden files is `lsof` (list open files). This can hel
 
 Also you might have unmounted loop devices somewhere in the root disk. You can see them using:
 
-```
+```sh
 sudo losetup -a
+sudo losetup /dev/loop1 /mnt/loop1
 ```
 
 ## Ultimate solution
