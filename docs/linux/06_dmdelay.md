@@ -39,6 +39,7 @@ sudo dmsetup suspend delayed_loop
 sudo dmsetup resume delayed_loop
 # change an existng device
 echo "0 4096 delay /dev/sdX 0 2000" | sudo dmsetup reload delayed_loop
+sudo dmsetup resume delayed_loop
 # drop OS paged cache if delay is not happening
 echo 3 | sudo tee /proc/sys/vm/drop_caches
 ```
